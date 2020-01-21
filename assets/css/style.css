@@ -1,0 +1,51 @@
+html {
+
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    padding: 0;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(255, 230, 0);
+    /* padding: 0.5rem; */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2rem;
+    height: 1.75em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#burger-icon {
+    /* padding-left: 0.5em; */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+}
+
+#burger-icon i{
+    border: 0.5px solid rgba(255, 255, 255, 0.75);
+    padding: 5px 10px 5px 10px;
+}
+
+#menu {
+    
+}
+
+#menu #burger-icon i{
+    border: 1px solid rgba(128, 128, 128, 0.75);
+    padding: 5px 10px 5px 10px;
+}
+

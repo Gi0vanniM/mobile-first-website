@@ -1,3 +1,8 @@
+
+:root {
+    --main-graywhite: color: rgba(255, 255, 255, 0.75);
+}
+
 html {
 
 }
@@ -18,34 +23,114 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto auto;
     background-color: rgb(255, 230, 0);
     /* padding: 0.5rem; */
     color: rgba(255, 255, 255, 0.75);
     font-size: 2rem;
-    height: 1.75em;
+    height: 3.5rem;
     margin: auto;
+    align-items: center;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+#header-text {
+    visibility: hidden;
+    color: rgba(128, 128, 128);
+    font-size: 1rem;
+}
+
+.header-items {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#burger-icon{
+    /* padding-left: 0.5em; */
+    /* font-size: 2rem; */
+    /* height: 1em; */
+    width: 1em;
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em; */
+    margin: 1rem;
+    visibility: visible;
     display: flex;
     align-items: center;
 }
 
-#burger-icon {
-    /* padding-left: 0.5em; */
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 0.5em;
-}
-
-#burger-icon i{
+#burger-icon button {
     border: 0.5px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     padding: 5px 10px 5px 10px;
+    background: none;
 }
 
 #menu {
-    
+    display: grid;
+    grid-template-columns: 4rem auto;
+    margin: auto;
+    height: 3.5rem;
 }
 
-#menu #burger-icon i{
+#burger-icon-2 {
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em; */
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#burger-icon-2 button {
     border: 1px solid rgba(128, 128, 128, 0.75);
+    color: rgba(128, 128, 128, 0.75);
     padding: 5px 10px 5px 10px;
+    background: none;
+}
+
+#menu-text {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items {
+    width: 100%;
+}
+
+#menu-img {
+    max-height: 5ch;
+    float: right;
+    padding-right: 2em;
+}
+
+
+@media (min-width: 780px) {
+    #header-text {
+        visibility: visible;
+    }
+    #burger-icon, #burger-icon-2{
+        visibility: hidden;
+    }
+    #burger-icon-2 {
+        display: none;
+    }
+    #menu {
+        grid-template-columns: auto auto;
+    }
+    .menu-items {
+        width: auto;
+    }
+
+}
+
+
+@media (min-width: 600px) {
+
 }
 

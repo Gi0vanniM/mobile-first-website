@@ -15,41 +15,61 @@
 
     <div id="main">
         <header id="header">
-            <span id="burger-icon">
-                <button class="fas fa-bars"></button>
+            <!-- HEADER DROPDOWN BUTTON WHEN IN MOBILE -->
+            <span id="burger-icon" class="dropdown">
+                <button onclick="dropDownHeader()" class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div id="dropdown-header" class="dropdown-content">
+                    <a href="#"><i class="fas fa-phone"></i> (06) --- --- --</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i> (06) --- --- --</a>
+                    <a href="#"><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</a>
+                    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    <a href="#"><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter-square"></i></a>
+                </div>
             </span>
+            <!--  -->
+
+            <!-- HEADER TEXT WHEN IN PC VER -->
             <span id="header-text">
-                <span class="header-items"><i class="fas fa-phone"></i> (06) --- --- --</span>
-                <span class="header-items"><i class="fab fa-whatsapp"></i> (06) --- --- --</span>
-                <span class="header-items"><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</span>
-                <span class="header-items"><i class="fas fa-tachometer-alt"></i> Dashboard</span>
-                <span class="header-items"><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i> <i
-                        class="fab fa-twitter-square"></i></span>
+                <a href="#" class="header-items"><i class="fas fa-phone"></i> (06) --- --- --</a>
+                <a href="#" class="header-items"><i class="fab fa-whatsapp"></i> (06) --- --- --</a>
+                <a href="#" class="header-items"><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</a>
+                <a href="#" class="header-items"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="#" class="header-items"><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i></a>
             </span>
         </header>
 
         <nav id="menu">
-            <span id="burger-icon-2">
-                <button class="fas fa-bars"></button>
+            <!-- NAV DROPDOWN BUTTON WHEN IN MOBILE -->
+            <span id="burger-icon-2" class="dropdown">
+                <button onclick="dropDownNav()" class="dropbtn"><i class="fas fa-bars"></i></button>
+                <div id="dropdown-nav" class="dropdown-content">
+                    <a href="#">AUTORIJBEWIJS <i class="fas fa-caret-down"></i></a>
+                    <a href="#">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i></a>
+                    <a href="#">THEORIELES</a>
+                    <a href="#">OPFRIS CURSUS</a>
+                    <a href="#">CONTACT</a>
+                </div>
             </span>
+            <!--  -->
+
             <img id="menu-img" src="assets/images/logo.png" alt="">
+
+            <!-- NAV TEXT WHEN IN PC VER -->
             <span id="menu-text">
                 <div class="menu-items">
-                    <span class="menu-items">AUTORIJBEWIJS <i class="fas fa-caret-down"></i></span>
-                    <span class="menu-items">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i></span>
-                    <span class="menu-items">THEORIELES</span>
-                    <span class="menu-items">OPFRIS CURSUS</span>
-                    <span class="menu-items">CONTACT</span>
+                    <a href="#" class="menu-items">AUTORIJBEWIJS <i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="menu-items">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i></a>
+                    <a href="#" class="menu-items">THEORIELES</a>
+                    <a href="#" class="menu-items">OPFRIS CURSUS</a>
+                    <a href="#" class="menu-items">CONTACT</a>
                 </div>
             </span>
         </nav>
 
         <div id="banner-slider">
             <img src="assets/images/blauw.jpg" alt="">
-
-        </div>
-
-        <div id="banner-slider">
 
         </div>
 
@@ -83,9 +103,11 @@
             </div>
         </div>
 
-        <div id="video"><iframe id="viedieoh" src="https://www.youtube.com/embed/WpkPdpiHBhw" frameborder="0"
+        <div id="video">
+            <iframe id="viedieoh" src="https://www.youtube.com/embed/lER2UA_PknM" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe></div>
+                allowfullscreen></iframe>
+        </div>
 
     </div>
 

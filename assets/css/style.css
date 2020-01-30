@@ -62,6 +62,8 @@ header p {
 .header-items {
     margin-left: 1em;
     margin-right: 1em;
+    color: rgba(128, 128, 128);
+    text-decoration: none;
 }
 
 #burger-icon{
@@ -97,7 +99,7 @@ header p {
     margin-bottom: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em; */
-    margin: 1rem;
+    margin: auto 1rem auto 1rem;
     display: flex;
     align-items: center;
 }
@@ -113,6 +115,7 @@ header p {
     display: flex;
     align-items: center;
     color: gray;
+    display: none;
 }
 
 .menu-items {
@@ -120,9 +123,11 @@ header p {
     margin: auto 0.5em auto 0.5em;
 }
 
-.menu-items span {
+.menu-items a {
     display: none;
     margin-top: auto;
+    color: gray;
+    text-decoration: none;
 }
 
 #menu-img {
@@ -176,6 +181,55 @@ hr {
     width: 100%;
 }
 
+/* ~~~~~~~~~~ DROPDOWN BUTTONS ~~~~~~~~~~ */
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(91, 157, 201);
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 1em;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.show {
+    display: block;
+}
+
+button i {
+    display: block;
+    pointer-events: none;
+}
+
 
 @media (min-width: 780px) {
     #header-text {
@@ -191,6 +245,9 @@ hr {
     #menu {
         grid-template-columns: auto auto;
         height: 6em;
+    }
+    #menu-text {
+        display: flex;
     }
     .menu-items {
         width: auto;
@@ -215,7 +272,7 @@ hr {
         height: 25.5em;
         width: 100%;
     }
-    .menu-items span {
+    .menu-items a {
         display: inline;
     }
 

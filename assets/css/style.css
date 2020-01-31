@@ -183,6 +183,14 @@ hr {
 
 /* ~~~~~~~~~~ DROPDOWN BUTTONS ~~~~~~~~~~ */
 
+#dropdown-header {
+    margin-top: 11em;
+}
+
+#dropdown-nav {
+    margin-top: 15em;
+}
+
 .dropbtn {
     color: white;
     padding: 16px;
@@ -196,7 +204,7 @@ hr {
 } */
 
 .dropdown {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
 }
 
